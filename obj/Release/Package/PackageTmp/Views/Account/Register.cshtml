@@ -1,0 +1,168 @@
+﻿@model HTLElectronics.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+<link href="~/Content/register.css" rel="stylesheet" />
+
+
+<div class="register">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="lbl-login animated tada" style="font-family: Monoton;">Register</p>
+
+
+
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form", @style = "padding: 2em 5em 5em;" }))
+            {
+                @Html.AntiForgeryToken()
+                <p style="justify-content: center;">
+                    @Html.ValidationSummary("", new { @class = "cerror" })
+                </p>
+                <center>
+
+                    <table style="display: flex; justify-content: center;">
+
+                        <tr>
+                            <td>
+                                @*@Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })*@
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "user-name", @placeholder = "Email Id" })
+
+                                @*<input class="user-name" type="text" name="Email" id="email" placeholder="Email Id" required />*@
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                @*@Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })*@
+                            </td>
+                            <td>
+                                @Html.PasswordFor(m => m.Password, new { @class = "user-name", @placeholder = "User Password" })
+
+                                @*<input class="user-name" type="password" name="Password" id="password" placeholder="Password" required />*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<label class="lbl-reg" for="cpassword">Confirm Password</label>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+
+                            </td>
+                            <td>
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "user-name", @placeholder = "Confirm Password" })
+
+                                @*<input class="user-name" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required />*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<label class="lbl-reg" for="cpassword">Confirm Password</label>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(m => m.FirstName, new { @class = "user-name", @placeholder = "First Name" })
+
+                                @*<input class="user-name" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required />*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<label class="lbl-reg" for="cpassword">Confirm Password</label>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(m => m.LastName, new { @class = "user-name", @placeholder = "Last Name" })
+
+                                @*<input class="user-name" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required />*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<label class="lbl-reg" for="cpassword">Confirm Password</label>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(m => m.State, new { @class = "user-name", @placeholder = "State" })
+
+                                @*<input class="user-name" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required />*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<label class="lbl-reg" for="cpassword">Confirm Password</label>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(m => m.ZipCode, new { @class = "user-name", @placeholder = "Zip Code" })
+
+                                @*<input class="user-name" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required />*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<label class="lbl-reg" for="cpassword">Confirm Password</label>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(m => m.City, new { @class = "user-name", @placeholder = "City" })
+
+                                @*<input class="user-name" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required />*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<label class="lbl-reg" for="cpassword">Confirm Password</label>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(m => m.State, new { @class = "user-name", @placeholder = "State" })
+
+                                @*<input class="user-name" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required />*@
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                @*<label class="lbl-reg" for="cpassword">Confirm Password</label>
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })*@
+
+                            </td>
+                            <td>
+                                @Html.TextBoxFor(m => m.MobileNumber, new { @class = "user-name", @placeholder = "Contact Number" })
+
+                                @*<input class="user-name" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required />*@
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Register" class="btn animate-btn" style="width: 100%; margin: 10px 0; background-color: green; color: white; font-weight: 700; border-radius: 10px; height: 39px;" />
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            }
+            @*<form style="padding: 2em 5em 5em;" id="register" action="~/Authentication/Register" method="POST" enctype="multipart/form-data">*@
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

@@ -30,7 +30,7 @@ namespace HTLElectronics.Models
         
         public Brand Brand { get; set; }
         [Required]
-        [DisplayName("Product Company")]
+        [DisplayName("Product Brand")]
         public string BrandId { get; set; }
 
 
