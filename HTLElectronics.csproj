@@ -202,6 +202,19 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Migrations\202207051329567_InitialCreate.cs" />
+    <Compile Include="Migrations\202207051329567_InitialCreate.Designer.cs">
+      <DependentUpon>202207051329567_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207051348355_init.cs" />
+    <Compile Include="Migrations\202207051348355_init.Designer.cs">
+      <DependentUpon>202207051348355_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207070733245_init2.cs" />
+    <Compile Include="Migrations\202207070733245_init2.Designer.cs">
+      <DependentUpon>202207070733245_init2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -275,6 +288,7 @@
     <Content Include="Content\ProductImages\e086a4da-a170-4558-8325-9accf427951c.png" />
     <Content Include="Content\ProductImages\ea03e12e-6e17-42ab-9c7c-e9654be56780.jpg" />
     <Content Include="Content\ProductImages\fbd7c2bd-f32b-4617-a31c-34874159d9bb.jpg" />
+    <Content Include="Content\product_details.css" />
     <Content Include="Content\register.css" />
     <Content Include="Content\regular.css" />
     <Content Include="Content\regular.min.css" />
@@ -508,6 +522,8 @@
     <Content Include="Views\Customer\AddCustomer.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Home\ss.cshtml" />
+    <Content Include="Views\Home\ProductDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -531,6 +547,17 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202207051329567_InitialCreate.resx">
+      <DependentUpon>202207051329567_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207051348355_init.resx">
+      <DependentUpon>202207051348355_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207070733245_init2.resx">
+      <DependentUpon>202207070733245_init2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

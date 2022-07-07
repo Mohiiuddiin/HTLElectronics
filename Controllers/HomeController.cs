@@ -71,5 +71,11 @@ namespace HTLElectronics.Controllers
 
             return View();
         }
+
+        public ActionResult ProductDetails(string id)
+        {   
+            Product product = context.Collection().Where(x => x.Id == id).Include(x => x.Brand).FirstOrDefault();
+            return View(product);
+        }
     }
 }

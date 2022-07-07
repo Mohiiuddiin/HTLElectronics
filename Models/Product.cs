@@ -11,12 +11,13 @@ namespace HTLElectronics.Models
     public class Product : BaseEntity
     {
         [Required]
-        [StringLength(20)]
+        //[StringLength(20)]
         [DisplayName("Product Name")]
         public string Name { get; set; }
         [Required]
         public string ProductCode { get; set; }
         public string Description { get; set; }
+        public string Specs { get; set; }
         [Required]
         public decimal Price { get; set; }
         [Required]

@@ -59,22 +59,25 @@
                 }
             </div>*@
         <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
                 @foreach (var item in Model.Products)
                 {
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-lg" style="border:1pt groove">
+                            <img class="card-img-top" alt="..." src="~/Content/ProductImages/@item.Image" />
+                            <div class="card-body">
+                                <div class="clearfix mb-3">
+                                    <span class="float-left badge nav-pills bg-dark text-light">@item.Brand.BrandName</span>
+                                    <span class="float-right price-hp"><b style="color:maroon">@item.Price TK</b></span>
+                                </div>
+                                <h5 class="card-title text-center"><a href="/Home/ProductDetails/@item.Id">@item.Name</a></h5>
 
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <img class="card-img-top" alt="..." src="~/Content/ProductImages/@item.Image" />
-                        <div class="card-body">
-                            <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-dark text-light">@item.Brand.BrandName</span> <span class="float-end price-hp">@item.Price</span> </div>
-                            <h5 class="card-title">@item.Name,@item.Description</h5>
-                            @*<h5 class="card-title">@item.ProductCode</h5>*@
-                            @*<h5 class="card-text"></h5>*@
-                            <div class="text-center my-4"> <a href="@Url.Action("AddToBusket","Busket",new { id = item.Id})" class="btn btn-warning">Add To Busket</a> </div>
+                                @*<h5 class="card-text"></h5>*@
+                                <div class="text-center my-3"><button class="btn btn-dark" style="width:100%;font-size:small">@item.ProductCode</button></div>
+                                @*@Url.Action("AddToBusket", "Busket", new { id = item.Id })*@
+                            </div>
                         </div>
                     </div>
-                </div>
                 }
             </div>
         </div>
@@ -83,24 +86,24 @@
         <div class="col-md-12 clearfix" />
     </div>
 
-   
+
 
     @*<div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <img class="card-img-top" alt="..." src="~/Content/ProductImages/@item.Image" />
-                    <div class="card-body">
-                        <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-primary">@Html.ActionLink(item.ProductCompany.Company, "Details", new { id = item.Id })</span> <span class="float-end price-hp">@item.Price</span> </div>
-                        <h5 class="card-title">@item.Description</h5>
-                        <div class="text-center my-4"> <a href="@Url.Action("AddToBusket","Busket",new { id = item.Id})" class="btn btn-warning">Add To Busket</a> </div>
+            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top" alt="..." src="~/Content/ProductImages/@item.Image" />
+                        <div class="card-body">
+                            <div class="clearfix mb-3"> <span class="float-start badge rounded-pill bg-primary">@Html.ActionLink(item.ProductCompany.Company, "Details", new { id = item.Id })</span> <span class="float-end price-hp">@item.Price</span> </div>
+                            <h5 class="card-title">@item.Description</h5>
+                            <div class="text-center my-4"> <a href="@Url.Action("AddToBusket","Busket",new { id = item.Id})" class="btn btn-warning">Add To Busket</a> </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-
-        </div>
-    </div>*@
-
+        </div>*@
+    
 </body>
 </html>
 

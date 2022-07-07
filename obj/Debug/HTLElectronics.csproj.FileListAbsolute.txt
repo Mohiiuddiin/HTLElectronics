@@ -118,3 +118,7 @@ D:\GitHub\HTLElectronics\bin\Unity.Abstractions.pdb
 D:\GitHub\HTLElectronics\bin\Unity.Container.pdb
 D:\GitHub\HTLElectronics\bin\Unity.Mvc.pdb
 D:\GitHub\HTLElectronics\bin\Unity.Mvc.xml
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.InitialCreate.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.csproj.GenerateResource.cache
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.init.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.init2.resources
