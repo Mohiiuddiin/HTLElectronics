@@ -10,7 +10,6 @@
     }
 </style>
 
-
 @using (Html.BeginForm("Create", "ProductManager", FormMethod.Post, new { encType = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
@@ -36,15 +35,7 @@
 
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="form-group col-md-12">
-                    @Html.LabelFor(model => model.Product.Description, htmlAttributes: new { @class = "control-label" })
 
-                    @Html.EditorFor(model => model.Product.Description, new { htmlAttributes = new { @class = "form-control col-md-12" } })
-                    @Html.ValidationMessageFor(model => model.Product.Description, "", new { @class = "text-danger" })
-
-                </div>
-            </div>
             <div class="col-md-6">
                 <div class="form-group col-md-12">
                     @Html.LabelFor(model => model.Product.ProductCode, htmlAttributes: new { @class = "control-label" })
@@ -86,7 +77,7 @@
                     @Html.LabelFor(model => model.Product.BrandId, htmlAttributes: new { @class = "control-label" })
 
                     @*@Html.DropDownListFor(model => model.Product.ProductCompanyId, new SelectList(Model.Companies, "Id", "Company"), "--select company--", new { htmlAttributes = new { @class = "", @style = "font-weight:bold;color:black;background-color: white;" } })*@
-                    @Html.DropDownListFor(model=>model.Product.BrandId, new SelectList(Model.Brands, "Id", "BrandName"), "-- Select Category --", new { @style = "font-weight:bold;color:black;background-color: white;", @class = "form-control col-md-12" })
+                    @Html.DropDownListFor(model => model.Product.BrandId, new SelectList(Model.Brands, "Id", "BrandName"), "-- Select Category --", new { @style = "font-weight:bold;color:black;background-color: white;", @class = "form-control col-md-12" })
 
                 </div>
             </div>
@@ -96,6 +87,48 @@
                     @Html.LabelFor(model => model.Product.Image, htmlAttributes: new { @class = "control-label" })
 
                     <input type="file" id="file" name="file" class="form-control col-md-12" />
+
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group col-md-12">
+                    @Html.LabelFor(model => model.Product.Description, htmlAttributes: new { @class = "control-label" })
+
+                    @*@Html.EditorFor(model => model.Product.Description, new { htmlAttributes = new { @class = "form-control col-md-12" } })*@
+
+
+                    <textarea cols="80" id="Product_Description" name="Product.Description" rows="10" data-sample-short></textarea>
+
+
+                    @Html.ValidationMessageFor(model => model.Product.Description, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group col-md-12">
+                    @Html.LabelFor(model => model.Product.Specs, htmlAttributes: new { @class = "control-label" })
+
+                    @*@Html.EditorFor(model => model.Product.Description, new { htmlAttributes = new { @class = "form-control col-md-12" } })*@
+
+
+                    <textarea cols="80" id="Product_Specs" name="Product.Specs" rows="10" data-sample-short></textarea>
+
+
+                    @Html.ValidationMessageFor(model => model.Product.Specs, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group col-md-12">
+                    @Html.LabelFor(model => model.Product.Waarranty, htmlAttributes: new { @class = "control-label" })
+
+                    @*@Html.EditorFor(model => model.Product.Description, new { htmlAttributes = new { @class = "form-control col-md-12" } })*@
+
+
+                    <textarea cols="80" id="Product_Waarranty" name="Product.Waarranty" rows="10" data-sample-short></textarea>
+
+
+                    @Html.ValidationMessageFor(model => model.Product.Waarranty, "", new { @class = "text-danger" })
 
                 </div>
             </div>
@@ -115,3 +148,11 @@
 </div>
 
 
+<script>
+    // We need to turn off the automatic editor creation first.
+    CKEDITOR.disableAutoInline = true;
+
+    CKEDITOR.replace('Product_Description');
+    CKEDITOR.replace('Product_Specs');
+    CKEDITOR.replace('Product_Waarranty');
+</script>

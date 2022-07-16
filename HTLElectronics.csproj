@@ -214,6 +214,10 @@
     <Compile Include="Migrations\202207070733245_init2.Designer.cs">
       <DependentUpon>202207070733245_init2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207160444057_add_warranty_field.cs" />
+    <Compile Include="Migrations\202207160444057_add_warranty_field.Designer.cs">
+      <DependentUpon>202207160444057_add_warranty_field.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BaseEntity.cs" />
@@ -557,6 +561,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202207070733245_init2.resx">
       <DependentUpon>202207070733245_init2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207160444057_add_warranty_field.resx">
+      <DependentUpon>202207160444057_add_warranty_field.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

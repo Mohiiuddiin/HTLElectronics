@@ -122,3 +122,4 @@ D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.InitialCreate.resou
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.csproj.GenerateResource.cache
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.init.resources
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.init2.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.add_warranty_field.resources

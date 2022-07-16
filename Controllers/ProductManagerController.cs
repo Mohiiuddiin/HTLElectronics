@@ -119,6 +119,9 @@ namespace HTLElectronics.Controllers
                 productToEdit.Price = product.Price;
                 productToEdit.ProductCode = product.ProductCode;
                 productToEdit.WholeSalePrice = product.WholeSalePrice;
+                productToEdit.Specs = product.Specs;
+                productToEdit.Description = product.Description;
+                productToEdit.Waarranty = product.Waarranty;
                 
 
 
