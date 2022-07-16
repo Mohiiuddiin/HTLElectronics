@@ -10,9 +10,10 @@
     <link href="~/Content/carddemo.css" rel="stylesheet" />
 </head>
 <body>*@
-    @*<div class="bg-light" style="margin:10px">
-        <img style="width:100%;height:450px;" src="~/Content/Icons/shop-158317_960_720.png" />
-    </div>*@
+    <div class="bg-light" style="margin-left: 0px; right: 0px; margin-top: 20px; bottom: 10px ">
+        @*<img style="width:100%;height:450px;" src="~/Content/Icons/shop-158317_960_720.png" />*@
+        <img style="width:100%;height:450px;" src="~/Content/Logo/HTL.jpg" />
+    </div>
 @*<link href="~/Content/carddemo.css" rel="stylesheet" />*@
     <div class="" style="background-color:white">
         @*<h1 align="center" style="color: darkslategrey;font-weight:bolder">PRODUCT</h1>*@
@@ -21,23 +22,33 @@
         <div class="col-md-12">
             @*<h class="btn btn-dark btn-lg" style="font-weight:bolder;font-size:14px;color:azure">Filter By Category</h>*@
             @*<br />
-            <br />*@
-
-
-            <div class="list-group">
-                <button class="btn btn-dark">
-                    @Html.ActionLink("All", "Index", null, new { @class = Request["Category"] == null ? "list-group-item active" : "list-group-item",style="font-weight:bold" })
-                </button>
-                @foreach (var category in Model.ProductCategory)
+        <br />*@
+            <!--<div class="btn-group">-->
+                @*<a href="#!" class="btn btn-primary active">Active link</a>*@
+                @*@Html.ActionLink("All", "Index", null, new { @class = Request["Category"] == null ? "btn btn-primary active" : "btn btn-primary", style = "font-weight:bold" })*@
+                @*@foreach (var category in Model.ProductCategory)
                 {
-                    @*@Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "list-group-item active" : "list-group-item" })*@
+                    @Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "btn btn-primary active" : "btn btn-primary bg-light", style = "color:black;font-weight:bold" })
+
+                }*@
+                @*<a href="#!" class="btn btn-primary">Link</a>
+                <a href="#!" class="btn btn-primary">Link</a>*@
+            <!--</div>-->
+
+            <!--<div class="list-group">-->
+                @*<button class="btn btn-dark">
+                    @Html.ActionLink("All", "Index", null, new { @class = Request["Category"] == null ? "list-group-item active" : "list-group-item", style = "font-weight:bold" })
+                </button>*@
+                @*@foreach (var category in Model.ProductCategory)
+                {
+                    @Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "list-group-item active" : "list-group-item" })
                     <button class="btn btn-dark">
-                        @Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "list-group-item active" : "list-group-item bg-light",style= "color:black;font-weight:bold" })
+                        @Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "list-group-item active" : "list-group-item bg-light", style = "color:black;font-weight:bold" })
 
                     </button>
 
-                }
-            </div>
+                }*@
+            <!--</div>-->
         </div>
         @*<div class="row" style="margin:25px">
                 @foreach (var item in Model.Products)

@@ -71,7 +71,12 @@ namespace HTLElectronics.Controllers
 
             return View();
         }
-
+        public ActionResult _CatNavBar()
+        {
+            List<Brand> productCompany = productCompanies.Collection().ToList();
+            ViewBag.productCompany = productCompanies.Collection().ToList();
+            return PartialView(productCompany);
+        }
         public ActionResult ProductDetails(string id)
         {   
             Product product = context.Collection().Where(x => x.Id == id).Include(x => x.Brand).FirstOrDefault();

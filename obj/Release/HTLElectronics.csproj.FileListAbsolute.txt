@@ -122,3 +122,4 @@ D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.csproj.CoreCompileInputs.cac
 D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.csproj.CopyComplete
 D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.dll
 D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.pdb
+D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.add_warranty_field.resources

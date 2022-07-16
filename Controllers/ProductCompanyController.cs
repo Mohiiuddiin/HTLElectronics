@@ -28,6 +28,7 @@ namespace HTLElectronics.Controllers
             List<Brand> productCompany = repository.Collection().ToList();
             return View(productCompany);
         }
+        
 
         [HttpGet]
         [Authorize(Roles = "Admin,Employee")]
@@ -54,7 +55,7 @@ namespace HTLElectronics.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Employee")]
+        [Authorize(Roles = "Admin")]
 
         public ActionResult Edit(string Id)
         {

@@ -276,6 +276,7 @@
     <Content Include="Content\Icons\shop-158317_960_720.png" />
     <Content Include="Content\IndexCard.css" />
     <Content Include="Content\Login.css" />
+    <Content Include="Content\Logo\HTL.jpg" />
     <Content Include="Content\ProductImages\2e45132a-b6be-46e7-8639-c110d99b408a.jpg" />
     <Content Include="Content\ProductImages\31ab291c-efad-4e1e-824c-c38833644e41.jpg" />
     <Content Include="Content\ProductImages\38053f2d-f7dc-4611-bc16-7519387e22d3.jpg" />
@@ -528,6 +529,12 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Home\ss.cshtml" />
     <Content Include="Views\Home\ProductDetails.cshtml" />
+    <Content Include="Views\Home\_CatNavBar.cshtml" />
+    <Content Include="Views\Admin\_CatNavBar.cshtml" />
+    <Content Include="Views\Account\_CatNavBar.cshtml" />
+    <Content Include="Views\ProductCategoryManager\_CatNavBar.cshtml" />
+    <Content Include="Views\ProductCompany\_CatNavBar.cshtml" />
+    <Content Include="Views\ProductManager\_CatNavBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
