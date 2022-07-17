@@ -195,7 +195,7 @@
     }
 
 .product-deatil {
-    padding: 30px 30px 50px
+    padding: 5px 5px 5px
 }
 
     .product-deatil hr + .description-tabs {
@@ -305,7 +305,7 @@
 {
     padding-right: 0
 }
-
+    
 .product-content div[class*=col-md-8] {
     padding: 0 13px 0 0
 }
@@ -327,7 +327,12 @@
 }
 
 }
-
+/*@media only screen and (min-width:350px) {
+    .myimg{
+        width:230px;
+        height:200px;
+    }
+}*/
 .message img.online {
     width: 40px;
     height: 40px;

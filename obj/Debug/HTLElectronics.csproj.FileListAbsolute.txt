@@ -1,4 +1,3 @@
-D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.csproj.AssemblyReference.cache
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.csproj.CoreCompileInputs.cache
 D:\GitHub\HTLElectronics\bin\HTLElectronics.dll.config
 D:\GitHub\HTLElectronics\bin\HTLElectronics.dll
@@ -123,3 +122,4 @@ D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.csproj.GenerateResource.cache
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.init.resources
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.init2.resources
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.add_warranty_field.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.csproj.AssemblyReference.cache

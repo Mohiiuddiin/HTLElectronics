@@ -3,14 +3,24 @@
 @*@{
         ViewBag.Title = "Index";
     }*@
-<div class="btn-group">
-    @*<a href="#!" class="btn btn-primary active">Active link</a>*@
+@*<div class="btn-group">*@
+@*<a href="#!" class="btn btn-primary active">Active link</a>*@
+<li class="nav-item">
     @Html.ActionLink("All", "Index", null, new { @class = Request["Category"] == null ? "btn btn-primary active" : "btn btn-light", style = "font-weight:bold" })
-    @foreach (var category in Model.ProductCategory)
-    {
-        @Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "btn btn-primary active" : "btn btn-primary bg-light", style = "color:black;font-weight:bold" })
 
-    }
-    @*<a href="#!" class="btn btn-primary">Link</a>
-        <a href="#!" class="btn btn-primary">Link</a>*@
-</div>
+</li>
+@foreach (var category in Model.ProductCategory)
+{
+<li class="nav-item">
+    @Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "btn btn-primary active" : "btn btn-primary bg-light", style = "color:black;font-weight:bold" })
+</li>
+}
+
+
+@*@Html.ActionLink("Admin", "Index", "Admin", null, new { @class = "btn btn-dark" })*@
+@*  <a href="@Url.Action("Index", "Admin")"><button class="btn btn-light" style="font-weight:bold"><i class="fas fa-users-cog"></i>Admin</button></a>*@
+
+
+@*<a href="#!" class="btn btn-primary">Link</a>
+    <a href="#!" class="btn btn-primary">Link</a>*@
+@*</div>*@

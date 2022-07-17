@@ -28,11 +28,11 @@ namespace HTLElectronics.Controllers
             List<Brand> companies = productCompanies.Collection().ToList();
             if(Category == null)
             {
-                products = context.Collection().Include(x=>x.Brand).ToList();
+                products = context.Collection().Include(x=>x.Brand).Include(x=>x.Category).OrderBy(x => x.ProductCategoryId).ToList();
             }
             else
             {
-                products = context.Collection().Where(x => x.Category.Category == Category).Include(x => x.Brand).ToList();
+                products = context.Collection().Where(x => x.Category.Category == Category).Include(x => x.Brand).Include(x => x.Category).ToList();
             }
 
             ProductListView productList = new ProductListView
@@ -72,19 +72,8 @@ namespace HTLElectronics.Controllers
         }
         [ChildActionOnly]
         public ActionResult CatNavBar(string Category = null)
-        {
-            //List<Product> products;
-            List<ProductCategory> categories = productCategories.Collection().ToList();
-            //List<Brand> companies = productCompanies.Collection().ToList();
-            //if (Category == null)
-            //{
-            //    products = context.Collection().Include(x => x.Brand).ToList();
-            //}
-            //else
-            //{
-            //    products = context.Collection().Where(x => x.Category.Category == Category).Include(x => x.Brand).ToList();
-            //}
-
+        {           
+            List<ProductCategory> categories = productCategories.Collection().ToList();    
             ProductListView productList = new ProductListView
             {
                 Products = null,

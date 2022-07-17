@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\Published\HTL</_PublishTargetUrl>
-    <History>True|2022-07-16T06:55:29.9702313Z;</History>
+    <History>True|2022-07-17T11:45:47.9200938Z;True|2022-07-17T09:54:00.9390113+06:00;True|2022-07-17T09:52:13.0141563+06:00;True|2022-07-17T09:50:54.3116887+06:00;True|2022-07-16T12:55:29.9702313+06:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
@@ -21,10 +21,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/23/2017 13:15:20</publishTime>
     </File>
     <File Include="bin/HTLElectronics.dll">
-      <publishTime>07/16/2022 18:03:39</publishTime>
+      <publishTime>07/17/2022 17:45:46</publishTime>
     </File>
     <File Include="bin/HTLElectronics.pdb">
-      <publishTime>07/16/2022 18:03:39</publishTime>
+      <publishTime>07/17/2022 17:45:46</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>11/25/2019 10:57:50</publishTime>
@@ -315,7 +315,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/05/2022 17:47:12</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>07/05/2022 18:15:31</publishTime>
+      <publishTime>07/17/2022 13:30:44</publishTime>
     </File>
     <File Include="Content/bootstrap.css.map">
       <publishTime>07/05/2022 18:15:32</publishTime>
@@ -425,8 +425,23 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/Login.css">
       <publishTime>07/05/2022 18:15:32</publishTime>
     </File>
+    <File Include="Content/Logo/abstract-gray-white-low-polygon-background_78474-414.jpg">
+      <publishTime>07/17/2022 16:39:18</publishTime>
+    </File>
+    <File Include="Content/Logo/black-pattern-wallpaper-preview.jpg">
+      <publishTime>07/17/2022 16:36:17</publishTime>
+    </File>
     <File Include="Content/Logo/HTL.jpg">
       <publishTime>07/16/2022 17:15:14</publishTime>
+    </File>
+    <File Include="Content/Logo/istockphoto-1351875033-170667a.jpg">
+      <publishTime>07/17/2022 16:17:05</publishTime>
+    </File>
+    <File Include="Content/Logo/pexels-henry-&amp;-co-2341290.jpg">
+      <publishTime>07/17/2022 16:06:33</publishTime>
+    </File>
+    <File Include="Content/Logo/white-gray-background-with-diagonal-lines-pattern_1017-25100.jpg">
+      <publishTime>07/17/2022 16:14:04</publishTime>
     </File>
     <File Include="Content/ProductImages/2e45132a-b6be-46e7-8639-c110d99b408a.jpg">
       <publishTime>07/05/2022 18:15:32</publishTime>
@@ -477,7 +492,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/05/2022 18:15:32</publishTime>
     </File>
     <File Include="Content/product_details.css">
-      <publishTime>07/07/2022 12:39:56</publishTime>
+      <publishTime>07/17/2022 12:09:17</publishTime>
     </File>
     <File Include="Content/register.css">
       <publishTime>07/05/2022 18:15:32</publishTime>
@@ -1080,16 +1095,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/05/2022 18:09:48</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>07/16/2022 18:02:25</publishTime>
+      <publishTime>07/17/2022 17:27:54</publishTime>
     </File>
     <File Include="Views/Home/ProductDetails.cshtml">
-      <publishTime>07/16/2022 13:00:26</publishTime>
+      <publishTime>07/17/2022 17:45:17</publishTime>
     </File>
     <File Include="Views/Home/ss.cshtml">
       <publishTime>07/07/2022 12:54:07</publishTime>
     </File>
     <File Include="Views/Home/_CatNavBar.cshtml">
-      <publishTime>07/16/2022 17:57:19</publishTime>
+      <publishTime>07/17/2022 13:08:33</publishTime>
     </File>
     <File Include="Views/Manage/AddPhoneNumber.cshtml">
       <publishTime>07/05/2022 17:47:19</publishTime>
@@ -1140,7 +1155,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/16/2022 12:00:42</publishTime>
     </File>
     <File Include="Views/ProductManager/Index.cshtml">
-      <publishTime>07/07/2022 14:30:41</publishTime>
+      <publishTime>07/17/2022 11:18:52</publishTime>
+    </File>
+    <File Include="Views/Shared/bg.jpg">
+      <publishTime>07/17/2022 16:24:52</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/05/2022 17:47:18</publishTime>
@@ -1149,7 +1167,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/05/2022 17:47:19</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/16/2022 17:58:37</publishTime>
+      <publishTime>07/17/2022 17:03:58</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>07/05/2022 18:10:26</publishTime>

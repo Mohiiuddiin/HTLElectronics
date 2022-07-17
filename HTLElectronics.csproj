@@ -276,7 +276,12 @@
     <Content Include="Content\Icons\shop-158317_960_720.png" />
     <Content Include="Content\IndexCard.css" />
     <Content Include="Content\Login.css" />
+    <Content Include="Content\Logo\abstract-gray-white-low-polygon-background_78474-414.jpg" />
+    <Content Include="Content\Logo\black-pattern-wallpaper-preview.jpg" />
     <Content Include="Content\Logo\HTL.jpg" />
+    <Content Include="Content\Logo\istockphoto-1351875033-170667a.jpg" />
+    <Content Include="Content\Logo\pexels-henry-&amp;-co-2341290.jpg" />
+    <Content Include="Content\Logo\white-gray-background-with-diagonal-lines-pattern_1017-25100.jpg" />
     <Content Include="Content\ProductImages\2e45132a-b6be-46e7-8639-c110d99b408a.jpg" />
     <Content Include="Content\ProductImages\31ab291c-efad-4e1e-824c-c38833644e41.jpg" />
     <Content Include="Content\ProductImages\38053f2d-f7dc-4611-bc16-7519387e22d3.jpg" />
@@ -456,6 +461,7 @@
     <Content Include="Scripts\webcamjs-master\webcam.js" />
     <Content Include="Scripts\webcamjs-master\webcam.min.js" />
     <Content Include="Scripts\webcamjs-master\webcam.swf" />
+    <Content Include="Views\Shared\bg.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -6,12 +6,38 @@
 
 <link href="~/Content/product_details.css" rel="stylesheet" />
 @*<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />*@
-@*<style>
+<style>
+    /*.myimg {
+        width: auto;
+        height: auto;
+    }*/
+   body{
+       background-color:whitesmoke
+   }
 
-    </style>*@
-<div class="">
+    .img_producto_container {
+        width: 420px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        cursor: zoom-in;
+    }
+
+    .img_producto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s ease-out;
+    }
+</style>
+<div class="container-fluid" >
     <!-- product -->
-    <div class="product-content product-wrap clearfix product-deatil">
+    <div class="product-content product-wrap clearfix product-deatil" style="background-color:whitesmoke">
         <div class="row">
             <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="product-image">
@@ -19,24 +45,33 @@
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel-2" data-slide-to="0" class=""></li>
                             @*<li data-target="#myCarousel-2" data-slide-to="1" class="active"></li>
-                        <li data-target="#myCarousel-2" data-slide-to="2" class=""></li>*@
+            <li data-target="#myCarousel-2" data-slide-to="2" class=""></li>*@
                         </ol>
-                        <div class="carousel-inner">
-                            <!-- Slide 1 -->
-                            <div class="item active">
-                                <img src="~/Content/ProductImages/@Model.Image" class="img-fluid" style="height:300px;width:420px" alt="" />
-                            </div>
-                            <!-- Slide 2 -->
-                            <!--<div class="item">
-                        <img src="https://via.placeholder.com/700x400/87CEFA/000000" class="img-responsive" alt="" />
-                    </div>-->
-                            <!-- Slide 3 -->
-                            <!--<div class="item">
-                        <img src="https://via.placeholder.com/700x400/B0C4DE/000000" class="img-responsive" alt="" />
-                    </div>-->
-                        </div>
+                        <!--<div class="carousel-inner">-->
+                        <!-- Slide 1 -->
+                        <!--<div class="item active">
+        <img src="~/Content/ProductImages/@Model.Image" class="img-fluid" style="height:300px;width:420px" alt="" />
+    </div>-->
+                        <!-- Slide 2 -->
+                        <!--<div class="item">
+        <img src="https://via.placeholder.com/700x400/87CEFA/000000" class="img-responsive" alt="" />
+    </div>-->
+                        <!-- Slide 3 -->
+                        <!--<div class="item">
+        <img src="https://via.placeholder.com/700x400/B0C4DE/000000" class="img-responsive" alt="" />
+    </div>-->
+                        <!--</div>-->
+                <div class="img_producto_container" style="height:300px;width:460px"  data-scale="1.6">
+                    <a class="dslc-lightbox-image img_producto"
+                        href="#"
+                        target="_self"
+                        style="background-image: url('')">
+                        <img src="~/Content/ProductImages/@Model.Image" class="img-fluid" style="height:auto;width:auto" alt="" />
+                    </a>
+                </div>
+
                         @*<a class="left carousel-control" href="#myCarousel-2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-                    <a class="right carousel-control" href="#myCarousel-2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>*@
+        <a class="right carousel-control" href="#myCarousel-2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>*@
                     </div>
                 </div>
             </div>
@@ -84,76 +119,78 @@
                 </div>
             </div>
             @*<div class="description description-tabs">
-                <ul id="myTab" class="nav nav-pills">
-                    <li class="active"><a href="#more-information" data-toggle="tab" class="no-margin">Product Description </a></li>
-                    <li class=""><a href="#specifications" data-toggle="tab">Specifications</a></li>
-                    <li class=""><a href="#reviews" data-toggle="tab">Reviews</a></li>
-                </ul>
-                <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane fade active in" id="more-information">
-                        <br />
-                        <strong>Description Title</strong>
-                        <p>
-                            Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque augue
-                            sodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="specifications">
-                        <br />
-                        <dl class="">
-                            <dt>Gravina</dt>
-                            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-                            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                            <dd>Eget lacinia odio sem nec elit.</dd>
+                    <ul id="myTab" class="nav nav-pills">
+                        <li class="active"><a href="#more-information" data-toggle="tab" class="no-margin">Product Description </a></li>
+                        <li class=""><a href="#specifications" data-toggle="tab">Specifications</a></li>
+                        <li class=""><a href="#reviews" data-toggle="tab">Reviews</a></li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="more-information">
                             <br />
-
-                            <dt>Test lists</dt>
-                            <dd>A description list is perfect for defining terms.</dd>
+                            <strong>Description Title</strong>
+                            <p>
+                                Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque augue
+                                sodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="specifications">
                             <br />
+                            <dl class="">
+                                <dt>Gravina</dt>
+                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                <dd>Eget lacinia odio sem nec elit.</dd>
+                                <br />
 
-                            <dt>Altra porta</dt>
-                            <dd>Vestibulum id ligula porta felis euismod semper</dd>
-                        </dl>
+                                <dt>Test lists</dt>
+                                <dd>A description list is perfect for defining terms.</dd>
+                                <br />
+
+                                <dt>Altra porta</dt>
+                                <dd>Vestibulum id ligula porta felis euismod semper</dd>
+                            </dl>
+                        </div>
+
                     </div>
-                    
-                </div>
-            </div>*@
+                </div>*@
             <hr />
         </div>
     </div>
     <!-- end product -->
 </div>
 
-<div class="product-single-tabs">
+<div class="container-fluid product-single-tabs" style="">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active show" id="product-tab-desc" data-toggle="tab" href="#product-desc-content" role="tab" aria-controls="product-desc-content" aria-selected="true">Description</a>
+            <a class="nav-link active show btn btn-dark" id="product-tab-desc" data-toggle="tab" href="#product-desc-content" role="tab" aria-controls="product-desc-content" aria-selected="true">Description</a>
         </li>
+        &nbsp;
         <li class="nav-item">
-            <a class="nav-link" id="product-tab-tags" data-toggle="tab" href="#product-tags-content" role="tab" aria-controls="product-tags-content" aria-selected="false">Specification</a>
+            <a class="nav-link btn btn-dark" id="product-tab-tags" data-toggle="tab" href="#product-tags-content" role="tab" aria-controls="product-tags-content" aria-selected="false">Specification</a>
         </li>
-
+        &nbsp;
         <li class="nav-item">
-            <a class="nav-link" id="product-tab-warranty" data-toggle="tab" href="#product-warranty-content" role="tab" aria-controls="product-warranty-content" aria-selected="false">Warranty</a>
+            <a class="nav-link btn btn-dark" id="product-tab-warranty" data-toggle="tab" href="#product-warranty-content" role="tab" aria-controls="product-warranty-content" aria-selected="false">Warranty</a>
         </li>
-
+        &nbsp;
         <li class="nav-item">
-            <a class="nav-link" id="product-tab-reviews" data-toggle="tab" href="#product-reviews-content" role="tab" aria-controls="product-reviews-content" aria-selected="false">Reviews</a>
+            <a class="nav-link btn btn-dark" id="product-tab-reviews" data-toggle="tab" href="#product-reviews-content" role="tab" aria-controls="product-reviews-content" aria-selected="false">Reviews</a>
         </li>
     </ul>
-    <div class="tab-content">
+    <br />
+    <div class="tab-content ">
         <div class="tab-pane fade active show" id="product-desc-content" role="tabpanel" aria-labelledby="product-tab-desc">
             <div class="product-desc-content" style="background-color:white;color:black">
 
                 @Html.Raw(Model.Description)
-                
+
             </div><!-- End .product-desc-content -->
         </div><!-- End .tab-pane -->
 
         <div class="tab-pane fade" id="product-tags-content" role="tabpanel" aria-labelledby="product-tab-tags">
             <div class="product-tags-content" style="background-color:white;color:black">
 
-                @Html.Raw(Model.Specs)                
+                @Html.Raw(Model.Specs)
             </div><!-- End .product-tags-content -->
         </div><!-- End .tab-pane -->
 
@@ -162,104 +199,36 @@
 
                 @*<span id="ContentPlaceHolder1_lblWarrenty">05 Years Service Warranty &amp; 02 Years Panel, Parts &amp; Component Warranty </span>*@
                 @Html.Raw(Model.Waarranty)
-            </div> 
+            </div>
         </div>
-        <!-- ----------------------- Start Review --------------------------- -->
-        <!--<div class="tab-pane fade" id="product-reviews-content" role="tabpanel" aria-labelledby="product-tab-reviews">
-            <div class="product-reviews-content">
-                <div class="collateral-box">
-                    <ul>
-                        <li>Be the first to review this product</li>
-                    </ul>
-                </div>--><!-- End .collateral-box -->
 
-                <!--<div class="add-product-review">
-                    <h3 class="text-uppercase heading-text-color font-weight-semibold">WRITE YOUR OWN REVIEW</h3>
-                    <p>How do you rate this product? *</p>
-
-
-                    <table class="ratings-table">
-                        <thead>
-                            <tr>
-                                <th>&nbsp;</th>
-                                <th>1 star</th>
-                                <th>2 stars</th>
-                                <th>3 stars</th>
-                                <th>4 stars</th>
-                                <th>5 stars</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Your Rating</td>
-                                <td>-->
-                                    <!-- <input type="radio" name="ratings[1]" id="Quality_1" value="1" class="radio"> -->
-                                    <!--<span class="radio"><input id="ContentPlaceHolder1_RadioButton1" type="radio" name="ctl00$ContentPlaceHolder1$RadioButton1" value="RadioButton1"></span>
-                                </td>
-                                <td>-->
-                                    <!-- <input type="radio" name="ratings[1]" id="Quality_2" value="2" class="radio"> -->
-                                    <!--<span class="radio"><input id="ContentPlaceHolder1_RadioButton2" type="radio" name="ctl00$ContentPlaceHolder1$RadioButton2" value="RadioButton2"></span>
-                                </td>
-                                <td>-->
-                                    <!-- <input type="radio" name="ratings[1]" id="Quality_3" value="3" class="radio"> -->
-                                    <!--<span class="radio"><input id="ContentPlaceHolder1_RadioButton3" type="radio" name="ctl00$ContentPlaceHolder1$RadioButton3" value="RadioButton3"></span>
-                                </td>
-                                <td>-->
-                                    <!-- <input type="radio" name="ratings[1]" id="Quality_4" value="4" class="radio">-->
-                                    <!--<span class="radio"><input id="ContentPlaceHolder1_RadioButton4" type="radio" name="ctl00$ContentPlaceHolder1$RadioButton4" value="RadioButton4"></span>
-                                </td>
-                                <td>-->
-                                    <!-- <input type="radio" name="ratings[1]" id="Quality_5" value="5" class="radio"> -->
-                                    <!--<span class="radio"><input id="ContentPlaceHolder1_RadioButton5" type="radio" name="ctl00$ContentPlaceHolder1$RadioButton5" value="RadioButton5" checked="checked"></span>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                    <div class="form-group">
-                        <label>Full Name <span class="required">*</span></label>-->
-                        <!--
-                        <input type="text" class="form-control form-control-sm" required>
-                        -->
-                        <!--<input name="ctl00$ContentPlaceHolder1$txtName" type="text" id="ContentPlaceHolder1_txtName" class="form-control form-control-sm">
-                    </div>--><!-- End .form-group -->
-
-                    <!--<div class="form-group">
-                        <label>Email Address <span class="required">*</span></label>
-                        <input name="ctl00$ContentPlaceHolder1$txtEmail" type="text" id="ContentPlaceHolder1_txtEmail" class="form-control form-control-sm">
-                    </div>--><!-- End .form-group -->
-
-                    <!--<div class="form-group">
-                        <label>Summary of Your Review <span class="required">*</span></label>
-                        <input name="ctl00$ContentPlaceHolder1$txtSub" type="text" id="ContentPlaceHolder1_txtSub" class="form-control form-control-sm">
-                    </div>--><!-- End .form-group -->
-
-                    <!--<div class="form-group mb-2">
-                        <label>Review <span class="required">*</span></label>-->
-                        <!--
-                        <textarea cols="5" rows="6" class="form-control form-control-sm"></textarea>
-                        -->
-                        <!--<textarea name="ctl00$ContentPlaceHolder1$txtReview" rows="2" cols="20" id="ContentPlaceHolder1_txtReview" class="form-control form-control-sm"></textarea>
-
-                    </div>--><!-- End .form-group -->
-
-                    <!--<input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Submit Review" id="ContentPlaceHolder1_btnSubmit" class="btn btn-primary">-->
-
-                    <!--
-                    <input type="submit" class="btn btn-primary" value="Submit Review">
-                    -->
-
-                <!--</div>-->
-                <!-- End .add-product-review -->
-
-            <!--</div>-->
-            <!-- End .product-reviews-content -->
-
-        <!--</div>-->
-        <!-- End .tab-pane -->
-        <!-- ----------------------- End Review ----------------------------- -->
 
     </div>
     <!-- End .tab-content -->
 </div>
+
+<script>
+    $(".img_producto_container")
+        // tile mouse actions
+        .on("mouseover", function () {
+            $(this)
+                .children(".img_producto")
+                .css({ transform: "scale(" + $(this).attr("data-scale") + ")" });
+        })
+        .on("mouseout", function () {
+            $(this)
+                .children(".img_producto")
+                .css({ transform: "scale(1)" });
+        })
+        .on("mousemove", function (e) {
+            $(this)
+                .children(".img_producto")
+                .css({
+                    "transform-origin":
+                        ((e.pageX - $(this).offset().left) / $(this).width()) * 100 +
+                        "% " +
+                        ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +
+                        "%"
+                });
+        });
+</script>
