@@ -126,7 +126,7 @@
                     </li>
                 }
                 &nbsp;
-                @Html.RenderAction("_CatNavBar","Home","")
+                @Html.Action("CatNavBar","Home")
                 @if (Request.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Employee")))
                 {
                     <li class="nav-item dropdown">

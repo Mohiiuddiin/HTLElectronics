@@ -54,8 +54,7 @@ namespace HTLElectronics.Controllers
             else
             {
                 return View(product);
-            }
-            
+            }            
         }
 
         public ActionResult About()
@@ -71,11 +70,28 @@ namespace HTLElectronics.Controllers
 
             return View();
         }
-        public ActionResult _CatNavBar()
+        [ChildActionOnly]
+        public ActionResult CatNavBar(string Category = null)
         {
-            List<Brand> productCompany = productCompanies.Collection().ToList();
-            ViewBag.productCompany = productCompanies.Collection().ToList();
-            return PartialView(productCompany);
+            //List<Product> products;
+            List<ProductCategory> categories = productCategories.Collection().ToList();
+            //List<Brand> companies = productCompanies.Collection().ToList();
+            //if (Category == null)
+            //{
+            //    products = context.Collection().Include(x => x.Brand).ToList();
+            //}
+            //else
+            //{
+            //    products = context.Collection().Where(x => x.Category.Category == Category).Include(x => x.Brand).ToList();
+            //}
+
+            ProductListView productList = new ProductListView
+            {
+                Products = null,
+                ProductCategory = categories,
+                Brands = null
+            };
+            return PartialView("_CatNavBar", productList);
         }
         public ActionResult ProductDetails(string id)
         {   

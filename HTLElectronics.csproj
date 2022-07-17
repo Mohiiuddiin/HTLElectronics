@@ -530,11 +530,6 @@
     <Content Include="Views\Home\ss.cshtml" />
     <Content Include="Views\Home\ProductDetails.cshtml" />
     <Content Include="Views\Home\_CatNavBar.cshtml" />
-    <Content Include="Views\Admin\_CatNavBar.cshtml" />
-    <Content Include="Views\Account\_CatNavBar.cshtml" />
-    <Content Include="Views\ProductCategoryManager\_CatNavBar.cshtml" />
-    <Content Include="Views\ProductCompany\_CatNavBar.cshtml" />
-    <Content Include="Views\ProductManager\_CatNavBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
