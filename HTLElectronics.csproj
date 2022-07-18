@@ -269,6 +269,7 @@
     <Content Include="Content\fontawesome-all.min.css" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\homeIndex.css" />
     <Content Include="Content\Icons\3577650.png" />
     <Content Include="Content\Icons\customer-icon-vector-male.jpg" />
     <Content Include="Content\Icons\employee-icon-free-vector.jpg" />
@@ -277,11 +278,16 @@
     <Content Include="Content\IndexCard.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Logo\abstract-gray-white-low-polygon-background_78474-414.jpg" />
+    <Content Include="Content\Logo\all.jpg" />
     <Content Include="Content\Logo\black-pattern-wallpaper-preview.jpg" />
+    <Content Include="Content\Logo\fridge.jpg" />
     <Content Include="Content\Logo\HTL.jpg" />
     <Content Include="Content\Logo\istockphoto-1351875033-170667a.jpg" />
     <Content Include="Content\Logo\pexels-henry-&amp;-co-2341290.jpg" />
+    <Content Include="Content\Logo\tv.jpg" />
     <Content Include="Content\Logo\white-gray-background-with-diagonal-lines-pattern_1017-25100.jpg" />
+    <Content Include="Content\Ninja_Slider\ninja-slider.css" />
+    <Content Include="Content\Ninja_Slider\ninja-slider.js" />
     <Content Include="Content\ProductImages\2e45132a-b6be-46e7-8639-c110d99b408a.jpg" />
     <Content Include="Content\ProductImages\31ab291c-efad-4e1e-824c-c38833644e41.jpg" />
     <Content Include="Content\ProductImages\38053f2d-f7dc-4611-bc16-7519387e22d3.jpg" />

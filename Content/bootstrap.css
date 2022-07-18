@@ -4,6 +4,15 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@media only screen and (max-width: 500px) {
+    .moh-res {
+        height: 100px;
+    }
+
+    .moh-div {
+        height: 100px;
+    }
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -568,6 +577,7 @@ pre code {
     .container{
         margin-right:0px;
         padding-right:0px;
+        align-content:center;
     }
     .img_producto_container {
         padding-right: 0px;

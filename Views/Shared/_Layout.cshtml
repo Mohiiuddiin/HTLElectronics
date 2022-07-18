@@ -1,56 +1,4 @@
-﻿@*<!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@ViewBag.Title - My ASP.NET Application</title>
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-
-    </head>
-    <body style="background-color:">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        @if(Request.IsAuthenticated && User.IsInRole("Admin")) {
-                        <li>@Html.ActionLink("Admin", "Index", "Admin")</li>
-                        }
-                        <li>@Html.ActionLink("Product Manager", "Index", "ProductManager")</li>
-                        <li>@Html.ActionLink("Product Category Manager", "Index", "ProductCategoryManager")</li>
-                    </ul>
-                    @Html.Partial("_LoginPartial")
-                    @{
-                        Html.RenderAction("BusketSummary", "Busket");
-                    }
-                </div>
-            </div>
-        </div>
-        <div class="">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            </footer>
-        </div>
-
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
-    </body>
-    </html>*@
-
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -83,6 +31,7 @@
         body {
             /*background-image: url(/Content/Logo/abstract-gray-white-low-polygon-background_78474-414.jpg);*/
         }
+
     </style>
     <script>
         $(document).ready(function () {
@@ -99,11 +48,10 @@
     @*darkslategray*@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="margin-top: 0px">
-        <a class="navbar-brand myclass  animated bounceInLeft" href="#" style="font-family: Oswald, sans-serif; margin-left: 5px ">
-            @**@
-            @*<img src="" />*@
+        <a class="navbar-brand myclass  animated bounceInLeft" href="#" style="font-family: Oswald, sans-serif; margin-left: 2px;">
             <img src="~/Content/Logo/HTL.jpg" style="width:50px;height:50px" />
             Hussain Trading Company Ltd
+            
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
