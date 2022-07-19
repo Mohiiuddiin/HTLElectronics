@@ -542,6 +542,7 @@
     <Content Include="Views\Home\ss.cshtml" />
     <Content Include="Views\Home\ProductDetails.cshtml" />
     <Content Include="Views\Home\_CatNavBar.cshtml" />
+    <Content Include="Views\Shared\pd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
