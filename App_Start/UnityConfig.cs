@@ -51,6 +51,7 @@ namespace HTLElectronics
             //container.RegisterType<IRepository<Busket>, SqlRepository<Busket>>();
             //container.RegisterType<IRepository<BusketItem>, SqlRepository<BusketItem>>();
             container.RegisterType<IRepository<Customer>, SqlRepository<Customer>>();
+            container.RegisterType<IRepository<AboutPageContent>, SqlRepository<AboutPageContent>>();
             //container.RegisterType<IRepository<Order>, SqlRepository<Order>>();
             //container.RegisterType<IRepository<Employee>, SqlRepository<Employee>>();
             //container.RegisterType<IRepository<Position>, SqlRepository<Position>>();

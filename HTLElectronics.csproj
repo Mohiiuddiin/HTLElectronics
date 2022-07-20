@@ -218,7 +218,32 @@
     <Compile Include="Migrations\202207160444057_add_warranty_field.Designer.cs">
       <DependentUpon>202207160444057_add_warranty_field.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207200618106_about_us_model.cs" />
+    <Compile Include="Migrations\202207200618106_about_us_model.Designer.cs">
+      <DependentUpon>202207200618106_about_us_model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207200659242_about_us_model_2.cs" />
+    <Compile Include="Migrations\202207200659242_about_us_model_2.Designer.cs">
+      <DependentUpon>202207200659242_about_us_model_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207200723567_about_us_model_3.cs" />
+    <Compile Include="Migrations\202207200723567_about_us_model_3.Designer.cs">
+      <DependentUpon>202207200723567_about_us_model_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207200732510_about_us_model_4.cs" />
+    <Compile Include="Migrations\202207200732510_about_us_model_4.Designer.cs">
+      <DependentUpon>202207200732510_about_us_model_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207200750062_DEL-ABOUT.cs" />
+    <Compile Include="Migrations\202207200750062_DEL-ABOUT.Designer.cs">
+      <DependentUpon>202207200750062_DEL-ABOUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207200754268_ADD-ABOUT.cs" />
+    <Compile Include="Migrations\202207200754268_ADD-ABOUT.Designer.cs">
+      <DependentUpon>202207200754268_ADD-ABOUT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AboutPageContent.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -543,6 +568,7 @@
     <Content Include="Views\Home\ProductDetails.cshtml" />
     <Content Include="Views\Home\_CatNavBar.cshtml" />
     <Content Include="Views\Shared\pd.cshtml" />
+    <Content Include="Views\Home\AddAboutPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -579,6 +605,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202207160444057_add_warranty_field.resx">
       <DependentUpon>202207160444057_add_warranty_field.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207200618106_about_us_model.resx">
+      <DependentUpon>202207200618106_about_us_model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207200659242_about_us_model_2.resx">
+      <DependentUpon>202207200659242_about_us_model_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207200723567_about_us_model_3.resx">
+      <DependentUpon>202207200723567_about_us_model_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207200732510_about_us_model_4.resx">
+      <DependentUpon>202207200732510_about_us_model_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207200750062_DEL-ABOUT.resx">
+      <DependentUpon>202207200750062_DEL-ABOUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207200754268_ADD-ABOUT.resx">
+      <DependentUpon>202207200754268_ADD-ABOUT.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

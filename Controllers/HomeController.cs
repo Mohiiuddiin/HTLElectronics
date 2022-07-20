@@ -14,12 +14,17 @@ namespace HTLElectronics.Controllers
         IRepository<Product> context;
         IRepository<ProductCategory> productCategories;
         IRepository<Brand> productCompanies;
+        IRepository<AboutPageContent> _Aboutus_Repo;
 
-        public HomeController(IRepository<Product> productContext, IRepository<ProductCategory> productCategoryContext, IRepository<Brand> productCompanyContext)
+        public HomeController(IRepository<Product> productContext,
+            IRepository<ProductCategory> productCategoryContext,
+            IRepository<Brand> productCompanyContext,
+            IRepository<AboutPageContent> Aboutus_Repo)
         {
             context = productContext;
             productCategories = productCategoryContext;
             productCompanies = productCompanyContext;
+            _Aboutus_Repo = Aboutus_Repo;
         }
         public ActionResult Index(string Category = null)
         {
@@ -58,9 +63,46 @@ namespace HTLElectronics.Controllers
         }
 
         public ActionResult About()
+        {  
+            AboutPageContent aboutUs = _Aboutus_Repo.Collection().FirstOrDefault();
+            
+            return View(aboutUs);
+            
+            
+        }
+        [HttpGet]
+        public ActionResult AddAboutPage()
         {
-            ViewBag.Message = "Your application description page.";
+            AboutPageContent IsExistAboutPage = _Aboutus_Repo.Collection().FirstOrDefault();
+            if (IsExistAboutPage!=null)
+            {
+                return View(IsExistAboutPage);
+            }
+            else
+            {
+                IsExistAboutPage = new AboutPageContent();
+                return View(IsExistAboutPage);
+            }
+            
+        }
+        [HttpPost]
+        public ActionResult AddAboutPage(AboutPageContent aboutUs)
+        {
+            AboutPageContent IsExistAboutPage = _Aboutus_Repo.Collection().FirstOrDefault();
 
+            if (ModelState.IsValid && IsExistAboutPage==null)
+            {
+                //aboutUs.Id = null;
+                _Aboutus_Repo.Insert(aboutUs);
+                _Aboutus_Repo.Commit();
+                return RedirectToAction("About");
+            }
+            else if (ModelState.IsValid && !string.IsNullOrEmpty(IsExistAboutPage.About))
+            {
+                IsExistAboutPage.About = aboutUs.About;
+                _Aboutus_Repo.Commit();
+                return RedirectToAction("About");
+            }
             return View();
         }
 

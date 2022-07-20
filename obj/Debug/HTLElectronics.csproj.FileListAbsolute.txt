@@ -123,3 +123,9 @@ D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.init.resources
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.init2.resources
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.add_warranty_field.resources
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.csproj.AssemblyReference.cache
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.about_us_model.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.about_us_model_2.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.about_us_model_3.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.about_us_model_4.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.DELABOUT.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.ADDABOUT.resources

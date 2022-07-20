@@ -5,6 +5,7 @@ using System.Web;
 using HTLElectronics.Interfaces;
 using HTLElectronics.Models;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 
 namespace HTLElectronics.DAL.Gateway
 {
@@ -26,7 +27,26 @@ namespace HTLElectronics.DAL.Gateway
 
         public void Commit()
         {
-            context.SaveChanges();
+            //context.SaveChanges();
+
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+                throw;
+            }
         }
 
         public void Delete(string Id)

@@ -25,6 +25,7 @@ namespace HTLElectronics.Models
         public DbSet<Brand> Brands { get; set; }        
 
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<AboutPageContent> AboutPageContents { get; set; }
         
 
         public ApplicationDbContext()
