@@ -242,6 +242,10 @@
     <Compile Include="Migrations\202207200754268_ADD-ABOUT.Designer.cs">
       <DependentUpon>202207200754268_ADD-ABOUT.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207210436408_add-icon-category.cs" />
+    <Compile Include="Migrations\202207210436408_add-icon-category.Designer.cs">
+      <DependentUpon>202207210436408_add-icon-category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutPageContent.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -298,7 +302,19 @@
     <Content Include="Content\Icons\3577650.png" />
     <Content Include="Content\Icons\customer-icon-vector-male.jpg" />
     <Content Include="Content\Icons\employee-icon-free-vector.jpg" />
+    <Content Include="Content\Icons\icons8-ac-66.png" />
+    <Content Include="Content\Icons\icons8-all-64.png" />
+    <Content Include="Content\Icons\icons8-call %281%29.gif" />
+    <Content Include="Content\Icons\icons8-facebook.gif" />
+    <Content Include="Content\Icons\icons8-gmail-logo.gif" />
+    <Content Include="Content\Icons\icons8-info.gif" />
+    <Content Include="Content\Icons\icons8-instagram.gif" />
     <Content Include="Content\Icons\icons8-inventory-64.png" />
+    <Content Include="Content\Icons\icons8-linkedin.gif" />
+    <Content Include="Content\Icons\icons8-refrigerator-64.png" />
+    <Content Include="Content\Icons\icons8-secured-letter %281%29.gif" />
+    <Content Include="Content\Icons\icons8-secured-letter.gif" />
+    <Content Include="Content\Icons\icons8-tv-80.png" />
     <Content Include="Content\Icons\shop-158317_960_720.png" />
     <Content Include="Content\IndexCard.css" />
     <Content Include="Content\Login.css" />
@@ -623,6 +639,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202207200754268_ADD-ABOUT.resx">
       <DependentUpon>202207200754268_ADD-ABOUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207210436408_add-icon-category.resx">
+      <DependentUpon>202207210436408_add-icon-category.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

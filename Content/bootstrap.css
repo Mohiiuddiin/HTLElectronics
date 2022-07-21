@@ -13,6 +13,23 @@
         height: 100px;
     }
 }
+.color-cg {
+    animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: orangered;
+    }
+
+    50% {
+        color: azure;
+    }
+
+    100% {
+        color: orangered;
+    }
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

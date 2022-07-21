@@ -129,3 +129,4 @@ D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.about_us_model_3.re
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.about_us_model_4.resources
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.DELABOUT.resources
 D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.ADDABOUT.resources
+D:\GitHub\HTLElectronics\obj\Debug\HTLElectronics.Migrations.addiconcategory.resources

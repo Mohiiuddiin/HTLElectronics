@@ -5,17 +5,68 @@
     }*@
 @*<div class="btn-group">*@
 @*<a href="#!" class="btn btn-primary active">Active link</a>*@
+@*<li class="nav-item">
+        @Html.ActionLink("All", "Index", null, new { @class = Request["Category"] == null ? "btn btn-primary active" : "btn btn-light", style = "font-weight:bold" })
+
+    </li>
+    @foreach (var category in Model.ProductCategory)
+    {
+    <li class="nav-item">
+        @Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "btn btn-primary active" : "btn btn-primary bg-light", style = "color:black;font-weight:bold" })
+    </li>
+    }*@
 <li class="nav-item">
-    @Html.ActionLink("All", "Index", null, new { @class = Request["Category"] == null ? "btn btn-primary active" : "btn btn-light", style = "font-weight:bold" })
+    @if (Request["Category"] == null)
+    {
+        <a class="btn btn-info active" href="/" style="font-weight:bold">
+            <img width="30" height="22" src="~/Content/Icons/icons8-all-64.png" /> ALL
+        </a>
+    }
+    else
+    {
+        <a class="btn btn-light" href="/" style="color: black; font-weight: bold">
+            <img width="30" height="22" src="~/Content/Icons/icons8-all-64.png" /> ALL
+        </a>
+    }
 
 </li>
+
 @foreach (var category in Model.ProductCategory)
 {
-<li class="nav-item">
-    @Html.ActionLink(category.Category, "Index", new { Category = category.Category }, new { @class = Request["Category"] == category.Category ? "btn btn-primary active" : "btn btn-primary bg-light", style = "color:black;font-weight:bold" })
-</li>
+    <p>|</p>
+    <li class="nav-item">
+        @if (Request["Category"] == category.Category)
+        {
+            <a class="btn btn-info active" href="/?Category=@category.Category" style="font-weight:bold">
+                <img width="30" height="22" src="~/Content/Icons/@category.Icon" /> @category.Category
+            </a>
+        }
+        else
+        {
+            <a class="btn btn-light bg-light" href="/?Category=@category.Category" style="color:black;font-weight:bold">
+                
+                <img width="30" height="22" src="~/Content/Icons/@category.Icon" /> @category.Category
+            </a>
+        }
+    </li>
+    
 }
+@*<li class="nav-item">
+    <a class="btn btn-primary bg-light" href="/?Category=Refrigerator" style="color:black;font-weight:bold">
+        <img width="30" height="22" src="~/Content/Icons/icons8-refrigerator-64.png" /> Refrigerator
+    </a>
+</li>
+<li class="nav-item">
+    <a class="btn btn-primary bg-light" href="/?Category=AC" style="color:black;font-weight:bold">
+        <img width="30" height="22" src="~/Content/Icons/icons8-ac-66.png" /> AC
+    </a>
+</li>
+<li class="nav-item">
+    <a class="btn btn-primary bg-light" href="/?Category=TV" style="color:black;font-weight:bold">
 
+        <img width="30" height="22" src="~/Content/Icons/icons8-tv-80.png" /> TV
+    </a>
+</li>*@
 
 @*@Html.ActionLink("Admin", "Index", "Admin", null, new { @class = "btn btn-dark" })*@
 @*  <a href="@Url.Action("Index", "Admin")"><button class="btn btn-light" style="font-weight:bold"><i class="fas fa-users-cog"></i>Admin</button></a>*@

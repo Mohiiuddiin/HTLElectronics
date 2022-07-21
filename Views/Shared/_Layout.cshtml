@@ -31,6 +31,8 @@
         body {
             /*background-image: url(/Content/Logo/abstract-gray-white-low-polygon-background_78474-414.jpg);*/
         }
+
+        
     </style>
     <script>
         $(document).ready(function () {
@@ -82,19 +84,26 @@
 
 
                 </ul>
-                <ul class="nav navbar-nav navbar-right bg-light" style="font-size:smaller">
+                <ul class="nav navbar-nav navbar-right bg-dark" style="font-size:10.5pt;border:dashed 2pt red">
                     <li>
                         @*@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
                         @*@Html.ActionLink("Profile", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @style = "width: 110px; height: 45px; background-color: #152F4F;font-weight:bold", @class = " nav-item nav-link" })*@
-                        <a class="nav-item nav-link text-danger" href="/Home/About" style=""><i class="fas fa-user"></i><b>About Us</b></a>
+                        <a class="nav-item nav-link text-light" href="/Home/About" style="">
+                            @*<i class="fas fa-user"></i>*@
+                            <img width="18" height="18" src="~/Content/Icons/icons8-info.gif" />
+                            <b class="color-cg">About Us</b>
+                        </a>
 
                     </li>
                     &nbsp;
                     <li>
                         @*@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
                         @*@Html.ActionLink("Profile", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @style = "width: 110px; height: 45px; background-color: #152F4F;font-weight:bold", @class = " nav-item nav-link" })*@
-                        <a class="nav-item nav-link text-danger" href="" style="">
-                            <i class="fa fa-envelope" aria-hidden="true"></i> <b>email</b>
+                        <a class="nav-item nav-link text-light" href="" style="">
+                            @*<i class="fa fa-envelope" aria-hidden="true"></i>*@
+                            <img width="18" height="18" src="~/Content/Icons/icons8-secured-letter (1).gif" />
+
+                            <b>Email</b>
                         </a>
 
                     </li>
@@ -102,12 +111,13 @@
                     <li>
                         @*@Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
                         @*@Html.ActionLink("Profile", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @style = "width: 110px; height: 45px; background-color: #152F4F;font-weight:bold", @class = " nav-item nav-link" })*@
-                        <a class="nav-item nav-link text-danger" href="" style="">
-                            <i class="bi bi-telephone"></i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                            </svg>
-                            <b>contact</b>
+                        <a class="nav-item nav-link text-light" href="" style="">
+                            @*<i class="bi bi-telephone"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>*@
+                            <img width="18" height="18" src="~/Content/Icons/icons8-call (1).gif" />
+                            <b>Contact</b>
                         </a>
                     </li>
                 </ul>
@@ -118,7 +128,7 @@
         </nav>
         <nav class="col-md-12 navbar navbar-expand-lg navbar-dark bg-dark" style="">
 
-            <a class="navbar-brand myclass  animated bounceInLeft" href="#" style="font-family: Oswald, sans-serif; margin-left: 2px;">
+            <a class="navbar-brand myclass  animated bounceInLeft" href="#" style="font-family: Oswald, sans-serif;font-size:16pt;color:lightgray; margin-left: 2px;">
                 <img src="~/Content/Logo/HTL.jpg" style="width:50px;height:50px" />
                 Hussain Trading Company Ltd
 
@@ -166,76 +176,76 @@
                         </li>
                     }
                     @*&nbsp;
-                    @if (Request.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Employee")))
-                    {
-                        <li class="nav-item dropdown">
-                            <button style="color: black; font-weight: bold;" class="dropdown-toggle btn btn-light" type="button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img style="height:22px;width:25px" src="~/Content/Icons/employee-icon-free-vector.jpg" />Employee</button>
-                            <div class="dropdown-menu">
-                                @Html.ActionLink("Employee Dashboard", "Index", "Employee", null, new { @class = "dropdown-item text-primary" })
-                                <div class="dropdown-divider"></div>
-                                @Html.ActionLink("Employee Registration", "RegisterEmployee", "Employee", null, new { @class = "dropdown-item text-primary" })
-                                <div class="dropdown-divider"></div>
-                                @Html.ActionLink("Attendances", "Index", "Attendance", null, new { @class = "dropdown-item text-primary" })
-                                <div class="dropdown-divider"></div>
-                                @Html.ActionLink("Make Attendance", "Create", "Attendance", null, new { @class = "dropdown-item text-primary" })
+                        @if (Request.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+                        {
+                            <li class="nav-item dropdown">
+                                <button style="color: black; font-weight: bold;" class="dropdown-toggle btn btn-light" type="button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img style="height:22px;width:25px" src="~/Content/Icons/employee-icon-free-vector.jpg" />Employee</button>
+                                <div class="dropdown-menu">
+                                    @Html.ActionLink("Employee Dashboard", "Index", "Employee", null, new { @class = "dropdown-item text-primary" })
+                                    <div class="dropdown-divider"></div>
+                                    @Html.ActionLink("Employee Registration", "RegisterEmployee", "Employee", null, new { @class = "dropdown-item text-primary" })
+                                    <div class="dropdown-divider"></div>
+                                    @Html.ActionLink("Attendances", "Index", "Attendance", null, new { @class = "dropdown-item text-primary" })
+                                    <div class="dropdown-divider"></div>
+                                    @Html.ActionLink("Make Attendance", "Create", "Attendance", null, new { @class = "dropdown-item text-primary" })
 
-                            </div>
-                        </li>
-                    }
-                    &nbsp;
-                    @if (Request.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Employee")))
-                    {
-                        <li class="nav-item dropdown">
-                            <button style="color: black; font-weight: bold;" class="dropdown-toggle btn btn-light" type="button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img style="height:22px;width:25px" src="~/Content/Icons/customer-icon-vector-male.jpg" />Customer</button>
-                            <div class="dropdown-menu">
-                                @Html.ActionLink("Customers", "Index", "Customer", null, new { @class = "dropdown-item text-primary" })
-                                <div class="dropdown-divider"></div>
-                                @Html.ActionLink("Add New Customer", "AddCustomer", "Customer", null, new { @class = "dropdown-item text-primary" })
+                                </div>
+                            </li>
+                        }
+                        &nbsp;
+                        @if (Request.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+                        {
+                            <li class="nav-item dropdown">
+                                <button style="color: black; font-weight: bold;" class="dropdown-toggle btn btn-light" type="button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img style="height:22px;width:25px" src="~/Content/Icons/customer-icon-vector-male.jpg" />Customer</button>
+                                <div class="dropdown-menu">
+                                    @Html.ActionLink("Customers", "Index", "Customer", null, new { @class = "dropdown-item text-primary" })
+                                    <div class="dropdown-divider"></div>
+                                    @Html.ActionLink("Add New Customer", "AddCustomer", "Customer", null, new { @class = "dropdown-item text-primary" })
 
-                            </div>
-                        </li>
-                    }
-                    &nbsp;
-                    @if (Request.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Employee")))
-                    {
-                        <li class="nav-item dropdown">
-                            <button style="color: black; font-weight: bold;" class="dropdown-toggle btn btn-light" type="button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img style="height:22px;width:25px" src="~/Content/Icons/3577650.png" />Sales</button>
+                                </div>
+                            </li>
+                        }
+                        &nbsp;
+                        @if (Request.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Employee")))
+                        {
+                            <li class="nav-item dropdown">
+                                <button style="color: black; font-weight: bold;" class="dropdown-toggle btn btn-light" type="button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img style="height:22px;width:25px" src="~/Content/Icons/3577650.png" />Sales</button>
 
-                            <div class="dropdown-menu">
-                                @Html.ActionLink("Add Supplier", "Index", "Supplier", null, new { @class = "dropdown-item text-primary" })
-                                <div class="dropdown-divider"></div>
-                                @Html.ActionLink("Make Purchase", "Index", "Purchase", null, new { @class = "dropdown-item text-primary" })
-                                <div class="dropdown-divider"></div>
-                                @Html.ActionLink("Make Sales", "Index", "Sales", null, new { @class = "dropdown-item text-primary" })
-                                <div class="dropdown-divider"></div>
-                                @Html.ActionLink("View Sales", "SalesView", "Sales", null, new { @class = "dropdown-item text-primary" })
-                                <div class="dropdown-divider"></div>
-                                @Html.ActionLink("View Purchases", "PurchasesView", "Purchase", null, new { @class = "dropdown-item text-primary" })
+                                <div class="dropdown-menu">
+                                    @Html.ActionLink("Add Supplier", "Index", "Supplier", null, new { @class = "dropdown-item text-primary" })
+                                    <div class="dropdown-divider"></div>
+                                    @Html.ActionLink("Make Purchase", "Index", "Purchase", null, new { @class = "dropdown-item text-primary" })
+                                    <div class="dropdown-divider"></div>
+                                    @Html.ActionLink("Make Sales", "Index", "Sales", null, new { @class = "dropdown-item text-primary" })
+                                    <div class="dropdown-divider"></div>
+                                    @Html.ActionLink("View Sales", "SalesView", "Sales", null, new { @class = "dropdown-item text-primary" })
+                                    <div class="dropdown-divider"></div>
+                                    @Html.ActionLink("View Purchases", "PurchasesView", "Purchase", null, new { @class = "dropdown-item text-primary" })
 
 
-                            </div>
-                        </li>
-                    }
-                    &nbsp;*@
+                                </div>
+                            </li>
+                        }
+                        &nbsp;*@
 
 
 
                 </ul>
                 @*@{
-                    if (Request.IsAuthenticated && User.IsInRole("Customer"))
-                    {
-                        Html.RenderAction("BusketSummary", "Busket");
-                    }
-                }*@
+                        if (Request.IsAuthenticated && User.IsInRole("Customer"))
+                        {
+                            Html.RenderAction("BusketSummary", "Busket");
+                        }
+                    }*@
                 @Html.Partial("_LoginPartial")
                 @*<button class="btn btn-secondary my-2 my-sm-0 " type="submit"><i class='fas fa-user-plus' style="color: azure"></i> <b style="color: azure">Login</b> </button>
-                <button class="btn btn-secondary my-2 my-sm-0 " type="submit"><i class="fas fa-sign-in-alt" style="color: azure"></i> <b style="color: azure">Register</b></button>*@
+                    <button class="btn btn-secondary my-2 my-sm-0 " type="submit"><i class="fas fa-sign-in-alt" style="color: azure"></i> <b style="color: azure">Register</b></button>*@
 
 
             </div>
         </nav>
     </div>
-   
+
 
     @*container,body-content*@
     <div class="" style="margin-top:60px;margin-left:0%;margin-right:0%;margin-bottom: 5px; padding-top: 20px; padding-bottom: 15%;">

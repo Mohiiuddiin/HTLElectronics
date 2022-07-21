@@ -123,3 +123,10 @@ D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.csproj.CopyComplete
 D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.dll
 D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.pdb
 D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.add_warranty_field.resources
+D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.about_us_model.resources
+D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.about_us_model_2.resources
+D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.about_us_model_3.resources
+D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.about_us_model_4.resources
+D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.DELABOUT.resources
+D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.ADDABOUT.resources
+D:\GitHub\HTLElectronics\obj\Release\HTLElectronics.Migrations.addiconcategory.resources
